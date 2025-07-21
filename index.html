@@ -1,47 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Destiny Evangelism Movement Membership Signup</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <title>Destiny Evangelism Movement Membership Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="DEM Logo" class="logo" />
-    <h2>Destiny Evangelism Movement Membership Signup</h2>
-    <form id="demForm">
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" required>
+    <header>
+        <img src="Logo.png" alt="DEM Logo" class="logo">
+        <h1>🌍 DESTINY EVANGELISM MOVEMENT 🌍</h1>
+        <p>Making God Real to the World through the Great Commission!</p>
+        <p>We are a passionate Christian movement on fire for global evangelism, committed to reaching every soul with the transforming Word of God.</p>
+        <p class="verses">📖 Matthew 28:18-20 | Acts 14:17 | Proverbs 11:30 | Daniel 12:3</p>
+        <p>Our mission is simple yet powerful: To make God real to the world through the Great Commission.</p>
+        <p>And our vision is Spirit-driven: To turn multitudes into true disciples of Jesus Christ by the power and help of the Holy Spirit.</p>
+        <p class="verses">📖 Mark 16:15-16 | Acts 1:8 | 2 Corinthians 13:14</p>
+        <p>Join us as we shine the light of Christ and raise kingdom ambassadors across the nations.</p>
+    </header>
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required value="menaheltonf@gmail.com" readonly>
+    <main>
+        <h2>Membership Signup Form</h2>
+        <form action="https://formsubmit.co/menaheltonf@gmail.com" method="POST">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="Full Name" required>
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required value="0778472217" readonly>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="Gender">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
 
-      <label for="gender">Gender:</label>
-      <select id="gender" name="gender" required>
-        <option value="Male" selected>Male</option>
-        <option value="Female">Female</option>
-      </select>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="Date of Birth">
 
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required value="1999-08-04">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="Phone Number">
 
-      <label for="purpose">Purpose of Registration:</label>
-      <select id="purpose" name="purpose" required>
-        <option value="Membership" selected>Membership</option>
-      </select>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email">
 
-      <label for="address">Address:</label>
-      <textarea id="address" name="address" rows="3"></textarea>
+            <label for="church">Name of Church:</label>
+            <input type="text" id="church" name="Church Name">
 
-      <button type="submit">Submit</button>
-    </form>
-    <p id="status"></p>
-  </div>
+            <label for="call">Area of Call in Service:</label>
+            <input type="text" id="call" name="Area of Call">
 
-  <script src="script.js"></script>
+            <label for="purpose">Purpose:</label>
+            <select id="purpose" name="Purpose">
+                <option value="">Select</option>
+                <option value="Membership">Membership</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Sponsorship">Sponsorship</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <section class="sources">
+        <h3>Biblical References</h3>
+        <ul>
+            <li><a href="https://bible.com/bible/1588/mat.28.18-20" target="_blank">Matthew 28:18–20</a></li>
+            <li><a href="https://bible.com/bible/1588/act.14.17" target="_blank">Acts 14:17</a></li>
+            <li><a href="https://bible.com/bible/1588/pro.11.30" target="_blank">Proverbs 11:30</a></li>
+            <li><a href="https://bible.com/bible/1588/dan.12.3" target="_blank">Daniel 12:3</a></li>
+            <li><a href="https://bible.com/bible/1588/mrk.16.15-16" target="_blank">Mark 16:15–16</a></li>
+            <li><a href="https://bible.com/bible/1588/act.1.8" target="_blank">Acts 1:8</a></li>
+            <li><a href="https://bible.com/bible/1588/2co.13.14" target="_blank">2 Corinthians 13:14</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Thank you for being part of this divine mission.<br>
+        Let’s keep shining, serving, and winning souls for Christ.<br>
+        Much love and blessings to each of you!</p>
+    </footer>
 </body>
 </html>
